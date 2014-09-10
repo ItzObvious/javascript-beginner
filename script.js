@@ -82,7 +82,7 @@ var Word = function(word) {
 				return _occurrences.length;
 			}
 		},
-		"addOccurence": {
+		"addOccurrence": {
 			enumerable: true,
 			value: function(occ) {
 				_occurrences.push(occ + 1); // Zählung beginnt bei 1
@@ -122,7 +122,7 @@ words.forEach(function(word, i) {
 	var lcWord = word.toLowerCase(); // Kleinschreibung
 	// legt Word-Objekt an und referenziert es in Objekt wordUnique:
 	if (wordUnique[lcWord] === undefined) wordUnique[lcWord] = new Word(lcWord);
-	wordUnique[lcWord].addOccurence(i); // erfasst das Vorkommen
+	wordUnique[lcWord].addOccurrence(i); // erfasst das Vorkommen
 });
 
 // Textlänge, längstes Wort, Wortanzahl, Durchschnittslänge
